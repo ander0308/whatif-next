@@ -4,7 +4,7 @@ import { Container } from "@/styles/global"
 import { SectionHeroStyle, ContentSocial, ContentText } from "./styles"
 
 import IconYoutube from "@/assets/youtube.svg"
-import IconInstagram from "@/assets/instagram.svg"
+import IconInstagram from "@/assets/instagram-fill.svg"
 import PopupVideo from "@/components/popupVideo/"
 
 const socials = [

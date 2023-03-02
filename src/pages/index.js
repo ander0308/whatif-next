@@ -4,6 +4,7 @@ import Header from '@/components/header'
 
 import { Poppins } from 'next/font/google'
 import SectionHero from '@/components/home/sectionHero'
+import CardCharacter from '@/components/cardCharacter'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function Home() {
       <main className={poppins.className}>
         <Header />
         <SectionHero />
+        <CardCharacter />
       </main>
       </>
   )
