@@ -1,6 +1,13 @@
 import Head from 'next/head'
-import Button from '@/components/button'
 import { getCssText } from '@/styles'
+import Header from '@/components/header'
+
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700']
+})
 
 export default function Home() {
   return (
@@ -12,10 +19,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <style id='stitches' dangerouslySetInnerHTML={{__html: getCssText()}}></style>
       </Head>
-      <main>
-        <h1>Whatif</h1>
-        <Button />
+      <main className={poppins.className}>
+        <Header />
       </main>
-    </>
+      </>
   )
 }

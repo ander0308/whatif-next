@@ -22,3 +22,9 @@ export const globalStyles = globalCss({
     cursor: "pointer"
   }
 })
+
+export const Container = styled("div", {
+  width: "100%",
+  maxWidth: 1216,
+  margin: "0 auto",
+})
