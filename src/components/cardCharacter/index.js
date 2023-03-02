@@ -2,18 +2,17 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { StyleCard } from "./styles"
-import ImageCharacter from '@/assets/character.jpg'
 
-function CardCharacter() {
+function CardCharacter({image, name, slug}) {
   return (
     <StyleCard>
-      <Link href="#">
+      <Link href={`/character/${slug}`}>
         <div className="image">
-          <Image src={ImageCharacter} alt="imagem personagem" />
+          <Image src={image} alt="imagem personagem" />
         </div>
         <div className="info">
           <div>
-            <h3>T Challa</h3>
+            <h3>{name}</h3>
             <span>Marvel Studios</span>
           </div>
           <span>What if</span>
