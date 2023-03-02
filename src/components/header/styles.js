@@ -1,5 +1,5 @@
 import { Container } from "@/styles/global";
-import { styled } from "../../styles";
+import { styled } from "@/styles";
 
 export const HeaderStyle = styled("header", {
   position: "absolute",

@@ -2,11 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { HeaderStyle } from './styles'
-
-import Logo from '../../assets/logo.svg'
-import LogoCodeboost from '../../assets/logo-codeboost.svg'
-
-import { Container } from "../../styles/global"
+import Logo from '@/assets/logo.svg'
+import LogoCodeboost from '@/assets/logo-codeboost.svg'
+import { Container } from "@/styles/global"
 
 function Header() {
   return (

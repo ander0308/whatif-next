@@ -3,6 +3,7 @@ import { getCssText } from '@/styles'
 import Header from '@/components/header'
 
 import { Poppins } from 'next/font/google'
+import SectionHero from '@/components/home/sectionHero'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -21,6 +22,7 @@ export default function Home() {
       </Head>
       <main className={poppins.className}>
         <Header />
+        <SectionHero />
       </main>
       </>
   )
