@@ -4,7 +4,7 @@ function PageCharacter() {
 
   const route = useRouter()
   return (
-    <h1>Presonage: {JSON.stringify(route.query)}</h1>
+    <h1>Personagem: {JSON.stringify(route.query)}</h1>
   )
 }
 
