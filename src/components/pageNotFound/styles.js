@@ -39,5 +39,22 @@ export const StylePageNotFound = styled("section",{
         filter: "brightness(0.8)"
       }
     }
+  },
+  "@tablet": {
+    textAlign: "center"
+  },
+  "@mobile": {
+    paddingLeft: 15,
+    paddingRight: 15,
+    [`${Container}`]: {
+      h1: {
+        fontSize: "3.6rem",
+        lineHeight: "4rem",
+      },
+      p: {
+        fontSize: "1.4rem",
+        lineHeight: "2.4rem",
+      }
+    }
   }
 })
