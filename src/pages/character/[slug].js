@@ -1,10 +1,13 @@
-import { useRouter } from "next/router"
+import SectionHeroCharacter from "@/components/details/sectionHeroCharacter"
+import ListCharacters from "@/components/home/ListCharacters"
 
 function PageCharacter() {
 
-  const route = useRouter()
   return (
-    <h1>Personagem: {JSON.stringify(route.query)}</h1>
+    <>
+      <SectionHeroCharacter />
+      <ListCharacters />
+    </>
   )
 }
 
