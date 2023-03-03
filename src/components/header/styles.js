@@ -38,5 +38,17 @@ export const HeaderStyle = styled("header", {
     height: "100%",
     padding: "0 23px",
     borderLeft: "1px solid rgba(255, 255, 255, 0.2)",
+  },
+  "@mobile": {
+    ".logo": {
+      img: {
+        width: 120,
+      }
+    },
+    ".code": {
+      img: {
+        width: 120
+      }
+    }
   }
 })

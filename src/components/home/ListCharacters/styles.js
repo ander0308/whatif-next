@@ -31,7 +31,14 @@ export const StyleSectionCharacters = styled("section", {
         backgroundColor: "$red800"
       }
     }
-  }
+  },
+  "@tablet": {
+    padding: "0 15px",
+    ".title": {
+      display: "flex",
+      flexDirection: "column",
+    }
+  },
 })
 
 export const StyleListCharacters = styled("div", {
@@ -39,10 +46,18 @@ export const StyleListCharacters = styled("div", {
   gridTemplateColumns: "repeat(4, 1fr)",
   gridGap: "4rem 3.3rem",
   ".marvel": {
-      width: 280,
+      maxWidth: 280,
       height: 368,
       display: "flex",
       alignItems: "center",
       justifyContent: "center"
+  },
+  "@tablet": {
+    gridTemplateColumns: "repeat(3, 1fr)",
+    justifyItems: "center",
+  },
+  "@mobile": {
+    gridTemplateColumns: "1fr",
+    width: "100%"
   }
 })

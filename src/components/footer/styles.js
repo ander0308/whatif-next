@@ -26,5 +26,25 @@ export const StyleFooter = styled("footer", {
         color: "$gray500",
       }
     }
-  }
+  },
+  "@tablet": {
+    [`${Container}`]: {
+      flexDirection: "column",
+      alignItems: "center",
+      "& > div": {
+        flexDirection: "column",
+        alignItems: "center",
+        strong: {
+          marginBottom: 20,
+        },
+        p: {
+          marginLeft: 0,
+          marginBottom: 20,
+          fontSize: "1.2rem",
+          lineHeight: "1.8rem",
+          textAlign: "center"
+        }
+      }
+    }
+  },
 })

@@ -17,5 +17,10 @@ export const { styled, globalCss, keyframes, getCssText, theme } = createStitche
       white: "#FFFFFF",
       black: "#000000"
     }
+  },
+  media: {
+    lgScreen: "(max-width: 1200px)",
+    tablet: "(max-width: 991px)",
+    mobile: "(max-width: 600px)",
   }
 })

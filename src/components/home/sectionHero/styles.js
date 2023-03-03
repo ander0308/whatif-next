@@ -49,6 +49,9 @@ export const ContentSocial = styled("div", {
         display: "block"
       }
     }
+  },
+  "@mobile": {
+    display: "none"
   }
 })
 
@@ -103,6 +106,49 @@ export const ContentText = styled("div", {
       "&:hover": {
         filter: "brightness(0.8)"
       }
+    }
+  },
+  "@tablet": {
+    flexDirection: 'column',
+    alignItems: "center",
+    ".left": {
+      textAlign: "center",
+      paddingBottom: "5rem",
+      paddingTop:"2rem",
+      h1: {
+        fontSize: "5rem",
+        lineHeight: "5.6rem",
+        marginBottom: 24,
+        maxWidth: 400,
+      },
+      p: {
+        fontSize: "1.4rem",
+        lineHeight: "2rem",
+      },
+      a: {
+        padding: "15px 30px",
+        backgroundColor: "$red900",
+        borderRadius: 5,
+        fontWeight: 600,
+        fontSize: "1.4rem",
+        lineHeight: "1.6rem",
+      }
+    }
+  },
+  "@mobile": {
+    padding: 15,
+    paddingRight: 15,
+    ".left": {
+      paddingBottom: "1rem",
+      h1: {
+        fontSize: "32px",
+        maxWidth: "100%",
+        marginBottom: "2rem"
+      },
+      p: {
+        fontSize: "1.2rem",
+        lineHeight: "2rem",
+      },
     }
   }
 })
