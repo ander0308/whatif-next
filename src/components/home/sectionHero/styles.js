@@ -46,7 +46,15 @@ export const ContentSocial = styled("div", {
         marginBottom: 32
       },
       a: {
-        display: "block"
+        display: "block",
+        img: {
+          transition: "transform .3s ease"
+        },
+        "&:hover": {
+          img: {
+            transform: "scale(1.2)"
+          }
+        }
       }
     }
   },
