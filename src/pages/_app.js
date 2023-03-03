@@ -2,7 +2,7 @@ import { Poppins } from 'next/font/google'
 import { globalStyles } from "@/styles/global";
 
 import Header from "@/components/header";
-import Footer from "@/components/home/footer";
+import Footer from "@/components/footer";
 
 
 globalStyles();
