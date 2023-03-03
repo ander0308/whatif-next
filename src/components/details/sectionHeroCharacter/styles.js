@@ -58,5 +58,34 @@ export const SectionCharacterStyle = styled("section", {
         color: "$gray400"
       }
     }
+  },
+  "@tablet": {
+    height: "60rem",
+    marginBottom: 30,
+    paddingBottom: 30,
+    [`${Container}`]: {
+      flexDirection: "column",
+      ".info": {
+        flexDirection: "column"
+      },
+      span: {
+        paddingLeft: 27,
+      },
+      "& > div": {
+        marginLeft: 0,
+        h1: {
+          fontSize: "4.1rem",
+          lineHeight: "7.1rem",
+          marginBottom: 13,
+        },
+        p: {
+          fontSize: "1.4rem",
+          lineHeight: "2rem",
+        }
+      }
+    },
+    ".image": {
+        width: "350px",
+    }
   }
 })
