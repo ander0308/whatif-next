@@ -5,47 +5,8 @@ import { Container } from '@/styles/global'
 import { StyleSectionCharacters, StyleListCharacters } from './styles'
 
 import LogoMarvel from '@/assets/logo.svg'
-import ImageCharacter from '@/assets/character.jpg'
 
-const characters = [
-  {
-    name: "Killmonger",
-    image: ImageCharacter,
-    slug: "killmonger"
-  },
-  {
-    name: "Killmonger",
-    image: ImageCharacter,
-    slug: "killmonger"
-  },
-  {
-    name: "Killmonger",
-    image: ImageCharacter,
-    slug: "killmonger"
-  },
-  {
-    name: "Killmonger",
-    image: ImageCharacter,
-    slug: "killmonger"
-  },
-  {
-    name: "Killmonger",
-    image: ImageCharacter,
-    slug: "killmonger"
-  },
-  {
-    name: "Killmonger",
-    image: ImageCharacter,
-    slug: "killmonger"
-  },
-  {
-    name: "Killmonger",
-    image: ImageCharacter,
-    slug: "killmonger"
-  },
-]
-
-function ListCharacters() {
+function ListCharacters({ data }) {
   return (
     <StyleSectionCharacters>
       <Container>
@@ -56,9 +17,9 @@ function ListCharacters() {
         <StyleListCharacters>
 
           {
-            characters.map(({name, image, slug}) => {
+            data.map((character) => {
               return(
-                <CardCharacter key={name} name={name} image={image} slug={slug} />
+                <CardCharacter key={character.id} name={character.data.name_character} image={character.data.image_character.url} slug={character.slugs} />
               )
             })
           }

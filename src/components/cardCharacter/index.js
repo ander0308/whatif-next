@@ -8,7 +8,7 @@ function CardCharacter({image, name, slug}) {
     <StyleCard>
       <Link href={`/character/${slug}`}>
         <div className="image">
-          <Image src={image} alt="imagem personagem" />
+          <Image src={image} alt="imagem personagem" height={372} width={280} />
         </div>
         <div className="info">
           <div>

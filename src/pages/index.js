@@ -5,8 +5,7 @@ import SectionHero from '@/components/home/sectionHero'
 import ListCharacters from '@/components/home/ListCharacters'
 import { getPrismicClient } from '@/service/prismic'
 
-export default function Home({ dataPage }) {
-
+export default function Home({ dataPage, characters }) {
   return (
     <>
       <Head>
@@ -17,17 +16,21 @@ export default function Home({ dataPage }) {
         {/* <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} /> */}
       </Head>
       <SectionHero data={dataPage} />
-      <ListCharacters />
+      <ListCharacters data={characters} />
     </>
   )
 }
 
 export const getStaticProps = async () => {
   const prismic = getPrismicClient()
+
   const contentPages = await prismic.getSingle("home")
+  const characters = await prismic.getAllByType("character")
+
   return {
     props: {
-      dataPage: contentPages.data
+      dataPage: contentPages.data,
+      characters
     },
     revalidate: 60
   }
