@@ -6,6 +6,7 @@ import { SectionHeroStyle, ContentSocial, ContentText } from "./styles"
 import IconYoutube from "@/assets/youtube.svg"
 import IconInstagram from "@/assets/instagram-fill.svg"
 import PopupVideo from "@/components/popupVideo/"
+import { useEffect } from "react"
 
 const socials = [
   {
@@ -22,7 +23,7 @@ const socials = [
   }
 ]
 
-function SectionHero() {
+function SectionHero({data}) {
   return (
     <SectionHeroStyle>
       <Container>
@@ -42,13 +43,12 @@ function SectionHero() {
         </ContentSocial>
         <ContentText>
           <div className="left">
-            <h3>COMING SON</h3>
-            <h1>Marvels WHAT IF...?</h1>
-            <p>A primeira série animada da Marvel Studios reinventa os momentos definitivos do Universo Cinematográfico Marvel de forma surpreendente, mudando o destino de seus heróis favoritos. Com diversos atores dublando seus personagens originais, “What If...?” tem roteiro de AC Bradley e direção de Bryan Andrews..
-            </p>
-            <a href="#">Saiba mais</a>
+            <h3>{data.subtitle_hero}</h3>
+            <h1>{data.title_hero}</h1>
+            <p>{data.description_hero[0].text}</p>
+            <a href={data.url_button.url} target="_blank">{data.label_button}</a>
           </div>
-          <PopupVideo />
+          <PopupVideo label={data.label_trailer} thumb={data.thumbnail_trailer.url}/>
         </ContentText>
       </Container>
     </SectionHeroStyle>
