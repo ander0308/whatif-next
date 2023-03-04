@@ -1,0 +1,65 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "word"
+  },
+  "subtitle_hero": {
+    "__TYPE__": "FieldContent",
+    "value": "whenever",
+    "type": "Text"
+  },
+  "title_hero": {
+    "__TYPE__": "FieldContent",
+    "value": "mouth",
+    "type": "Text"
+  },
+  "description_hero": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Sunt excepteur ex mollit eu voluptate officia elit ipsum voluptate laboris sint reprehenderit elit ad. Occaecat deserunt in mollit duis irure ullamco ut id mollit cupidatat magna ex sint qui. Amet ut consequat voluptate elit officia tempor duis pariatur irure nisi dolor sunt voluptate."
+        }
+      }
+    ]
+  },
+  "label_button": {
+    "__TYPE__": "FieldContent",
+    "value": "universe",
+    "type": "Text"
+  },
+  "url_button": {
+    "__TYPE__": "LinkContent",
+    "value": {
+      "__TYPE__": "ExternalLink",
+      "url": "https://slicemachine.dev"
+    }
+  },
+  "label_trailer": {
+    "__TYPE__": "FieldContent",
+    "value": "down",
+    "type": "Text"
+  },
+  "thumbnail_trailer": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+      "width": 4480,
+      "height": 4480
+    },
+    "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+    "width": 4480,
+    "height": 4480,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  }
+}

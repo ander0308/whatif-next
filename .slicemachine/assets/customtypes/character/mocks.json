@@ -1,0 +1,48 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "harbor"
+  },
+  "slug": {
+    "__TYPE__": "FieldContent",
+    "value": "floor",
+    "type": "Text"
+  },
+  "image_character": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+      "width": 4160,
+      "height": 3120
+    },
+    "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+    "width": 4160,
+    "height": 3120,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  },
+  "name_character": {
+    "__TYPE__": "FieldContent",
+    "value": "writer",
+    "type": "Text"
+  },
+  "description_character": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Ex amet pariatur ut minim nulla enim reprehenderit reprehenderit dolore deserunt Lorem sunt. Ea laboris anim magna aliquip in ipsum consequat nulla Lorem deserunt. Elit cupidatat fugiat reprehenderit do in eu dolore amet dolor officia eiusmod cupidatat esse pariatur ullamco."
+        }
+      }
+    ]
+  }
+}
